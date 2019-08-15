@@ -1,0 +1,133 @@
+@import url('style.css');
+
+section{
+	background-color: #e6ffcc;
+	height: auto;
+	width: auto;
+	margin: 20px;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	display: inline-block;
+	box-shadow: 3px 3px 5px gray;
+	border: 2px solid #e6e6e6;
+}
+
+h2{
+	font-family: kiona;
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	background-color: #5cb300;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px 5px 0 0;
+}
+
+form{
+	display: table;
+	margin: auto;
+}
+
+form table{
+	margin: auto;
+	display: table-cell;
+	margin: 0 15px;
+}
+
+form table td{
+	font-family: coolvetica;
+	font-size: 15px;
+	width: 100%;
+	text-align:center;
+}
+
+form table tr{
+	text-align: center;
+}
+
+form input[type=text], input[type=number]{
+	border-radius: 5px;
+	padding: 3px;
+	border: 1px solid #bfbfbf;
+	background-color: white;
+}
+
+form select{
+	padding: 5px;
+	font-family: coolvetica;
+}
+
+input[type=submit]{
+	font-family: coolvetica;
+	border-radius: 7px;
+	color: #00b33c;
+	border: 2px solid #00b33c;
+	background-color: white;
+	padding: 7px;
+	margin-left: 20px;
+}
+input[type=submit]:hover{
+	color: white;
+	border: 2px solid #00b33c;
+	background-color: #00b33c;
+	cursor: pointer;
+}
+#reset{
+	text-align: center;
+}
+
+#reset input[type=submit]{
+	margin: 0;
+}
+#verif input[type=submit]{
+	margin: 0 10px;
+}	
+.advert{
+	font-family: kiona;
+	font-size: 13px;
+	color: #800000;
+	font-weight: bolder;
+}
+
+#sections, #graphs{
+	width: 50%;
+}
+
+#sections{
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+	float: left;
+}
+
+#graphsTD, #ensTable{
+	float: right;
+	margin: 40px 40px 0 0;
+}
+
+#graphsTD figure{
+	display: inline-block;
+	margin: 0;
+}
+
+#ens form td{
+	width: 25%;
+}
+
+#ens form{
+	margin-top: 10px;
+}
+
+#ensTable{
+	max-height: 100%;
+    width: 30%;
+}
+
+#ensTable table{
+	width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-family: coolvetica;
+    overflow: scroll;
+    max-height: 100%;
+}

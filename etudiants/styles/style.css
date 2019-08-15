@@ -1,0 +1,146 @@
+@font-face{
+	font-family: coolvetica;
+	src: url(../polices/coolvetica.ttf);
+}
+
+
+html body{
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+table{
+	background-color: #c6ecc6;
+}
+
+#outside{
+	margin: auto;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border-spacing: 10px 15px;
+	box-shadow: 6px 6px 3px grey;
+}
+td{
+	font-family: coolvetica;
+}
+form tr{
+	width: 100%;
+}
+.inside{
+	width: 100%;
+}
+.input{
+	background-color: #d9f2d9;
+	width: 300px;
+}
+td p{
+	margin: 0;
+	padding-left: 10px;
+}
+.label, .label_img{
+	width: 120px;
+}
+.label_img{
+	text-align: center;
+}
+.change{
+	padding-left: 20px;
+}
+
+img{
+	border-radius: 5px;
+}
+
+.changepic{
+	text-align: center;
+}
+
+input[type=submit]{
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	font-family: coolvetica;
+	font-size: 13px;
+	background-image: linear-gradient( #79d279, #40bf40);
+	color: white;
+}
+
+input[type=submit]:hover{
+	color: #f2f2f2;
+	background-image: none;
+	background-color: #339933;
+	cursor: pointer;
+}
+
+#header{
+	margin: 10px 0 30px 0;
+	background: none;
+	width: 100%;
+}
+
+#img{
+	text-align: left;
+	padding: 0 10px;
+}
+
+#button{
+	text-align: right;
+	padding: 0 20px;
+}
+
+#changepswd{
+	margin: auto;
+	text-align: center;
+}
+
+#changepswd td{
+	padding: 5px;
+}
+
+.success, .error{
+	margin: 5px auto;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: roboto;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+	width: 300px;
+	text-align: center;
+}
+.success{
+	background-image: linear-gradient(#00e600, #006600);
+}
+
+.error{
+	background-image: linear-gradient(#ff9999, #e60000);
+}
+.error p, .success p{
+	margin: 0;
+}
+footer{
+	margin-top: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+footer aside{
+	float: right;
+}
+footer p{
+	display: inline-block;
+    font-family: sans-serif;
+}
+footer a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+footer a:hover{
+	color: black;
+}

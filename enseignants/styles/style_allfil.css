@@ -1,0 +1,385 @@
+@import url('style_uni.css');
+
+@font-face{
+	font-family: coolvetica;
+	src: url('../../polices/coolvetica.ttf');
+	
+}
+
+/*********************************************************************************************************Contenu*/
+
+#contenu{
+	flex: 1;
+	background-color: white;
+	height: 100%;
+}
+
+header{
+	height: 120px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: #F5F5F5;
+	border-bottom: 3px solid #dddddd;
+}
+
+header #search{
+	text-align: right;
+}
+
+header #search form{
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+
+header #formats, #search, #pdf{
+	height: 100%;
+	width: 33%;
+}
+
+header #search input[type=submit]{
+	background-color: transparent;
+	border: 0;
+	background-image: url('../images/search.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: contain;
+    width: 1.65em;
+    height: 100%;
+    cursor: pointer;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/**Formats*/
+
+header #formats{
+	text-align: left;
+	padding-left: 20px;
+}
+header #formats form{
+	display: inline-block;
+	margin-top: 50px;
+}
+
+header #formats input[type=submit]{
+	height: 36px;
+	cursor: pointer;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+	background-color: transparent;
+	border: 0;
+	background-position: top;
+	margin-left: 10px;
+}
+
+#four, #five, #six{
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: contain;
+}
+
+header #formats #four{
+	background-image: url('../images/4by4.png');
+	width: 61px;
+}
+
+header #formats #five{
+	background-image: url('../images/5by5.png');
+	width: 76px;
+}
+
+header #formats #six{
+	background-image: url('../images/6by6.png');
+	width: 92px;
+}
+/************************PDF*/
+
+.button{
+	text-decoration:none;
+	align-self: center;
+	display: block;
+	margin-top: 7px;
+}
+#pdf, #center{
+	align: center;
+}
+#printPDF, #pdf p{
+	text-decoration: none;
+	font-family: kiona;
+	font-size: 15px;
+	color: black;
+	display: inline-block;
+	margin-top: 50px;
+}
+#center img{
+	    margin: auto;
+    display: block;
+}
+#pdf input[type=submit]{
+	margin: auto;
+    display: block;
+	background-color: transparent;
+	border: 0;
+	background-image: url('../images/pdfprint.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: contain;
+    width: 27px;
+    height: 30px;
+    cursor: pointer;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#cover{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:5;
+    width:100%;
+    height:100%;
+    display:none;
+}
+#printScreen{
+    height:380px;
+    width:340px;
+    margin:0 auto;
+    position:relative;
+	margin-top: 30%;
+    z-index:10;
+    display:none;
+	background: url(../images/printbg.png) no-repeat;
+	border:5px solid #cccccc;
+	border-radius:10px;
+}
+#printScreen h2{
+	margin-top: 40px;
+    text-align: center;
+    font-family: kiona;
+	font-size: 20px;
+}
+#printScreen:target, #printScreen:target + #cover{
+    display:block;
+    opacity:2;
+}
+.cancel{
+    display:block;
+    position:absolute;
+    top:3px;
+    right:2px;
+    color:black;
+    height:30px;
+    width:35px;
+    font-size:30px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
+#formprint{
+	text-align: center;
+}
+#formprint table{
+	margin: auto;
+}
+#formprint input[type=submit]{
+	font-family: coolvetica;
+	border-radius: 7px;
+	color: #cc0000;
+	border: 2px solid #cc0000;
+	background-color: white;
+	padding: 7px;
+	margin-top: 30px;
+}
+#formprint input[type=submit]:hover{
+	color: white;
+	border: 2px solid #cc0000;
+	background-color: #cc0000;
+	cursor: pointer;
+}
+#formprint td{
+	padding: 5px;
+	text-align: left;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+	font-family: kiona;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+    background-color: #47d147;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/**********************Trombinoscope*/
+
+.trombiAll{
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+
+#trombinoscope_section{
+	padding: 5px;
+}
+
+.trombi{
+	width: 100%;
+	max-width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.trombi th{
+	font-family: kiona;
+	font-size: 50px;
+	border: 1px solid black;
+	background-color: #5cb300;
+	color: white;
+}
+
+.trombi td{
+	padding: 5px;
+	text-align: center;
+}
+
+.trombi .inside{
+	margin: auto;
+	border: 1px dotted black;
+	height: 225px;
+	width: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.trombi .inside td{
+	font-family: kiona;
+	font-size: 15px;
+	padding: 3px;
+}
+
+.trombi .inside .images:hover{
+	cursor: url('../images/last_mod_icon.png'), auto;
+}
+.toHover:hover{
+	cursor: url('../images/email_icon.png'), auto;
+}
+
+.trombi .inside .images{
+	height: 142px;
+	width: 110px;
+}
+
+/********************************************************************************************Favoris*/
+
+#add_favorite input[type=submit]{
+	background-color: transparent;
+	border: 0;
+	background-image: url('../images/add_fav.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: contain;
+    height: 50px;
+	width: 50px;
+    cursor: pointer;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#conteneur_fav{
+    display: flex;
+    justify-content: space-between;
+	padding: 10px;
+}
+
+#add_favorite, #remove_favorite{
+	width: 50%;
+	text-align: center;
+	padding-top: 10px;
+}
+#remove_favorite form, #add_favorite form{
+	display: inline-block;
+}
+
+#add_favorite table, #remove_favorite form{
+	border-radius: 10px 0 10px 0;
+	background-color: #e6e6e6;
+	padding: 10px;
+}
+
+#add_favorite table th{
+	text-align: center;
+	border-bottom: 1px solid black;
+	font-family: coolvetica;
+	font-size: 15px;
+	padding: 5px;
+	font-weight: lighter;
+}
+
+#add_favorite table td.normal, #supp_fav_txt{
+	font-family: coolvetica;
+	font-size: 15px;
+	padding: 5px;
+	font-weight: lighter;
+	margin: 0;
+	text-align: left;
+	text-indent: 20px;
+}
+#supp_fav_txt{
+	padding-bottom: 10px;
+}
+
+figure{
+	text-align: center;
+}

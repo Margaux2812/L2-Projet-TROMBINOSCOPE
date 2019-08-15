@@ -1,0 +1,166 @@
+@font-face{
+	font-family: coolvetica;
+	src: url(../../polices/coolvetica.ttf);
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+} 
+
+#conteneur{
+	width: 100%;
+	padding-top: 150px;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+
+td{
+	padding: 10px;
+	text-align: center;
+}
+
+#enstable{
+	margin: auto;
+	border-collapse: collapse;
+}
+
+#enspic{
+	border-radius: 10px 10px 0 0;
+	background-color: white;
+}
+
+#enspic img{
+	padding: 5px;
+	border-radius: 5px;
+	background-image: linear-gradient(#00b3b3, #006666);
+}
+
+.filled{
+	background-color: white;
+}
+
+#member_login{
+	background-image: linear-gradient(90deg, #e6e6e6, white, white);
+}
+
+#lockimg{
+	text-align: right;
+	padding-right: 10px;
+	border-radius: 0 5px 0 0;
+}
+
+#enstable td{
+	font-family: coolvetica;
+	font-size: 17px;
+	color: #595959;
+}
+
+input[type=text], input[type=password]{
+	font-family: coolvetica;
+	font-size: 17px;
+	border-radius: 3px;
+	background-color: #cccccc;
+}
+
+.ens{
+	text-align: left;
+	padding-left: 0;
+}
+
+.ens label{
+	padding: 0;
+}
+
+#button{
+	text-align: right;
+	border-radius: 0 0 0 5px;
+}
+
+#button input[type=submit]{
+	background-image: linear-gradient(#00b3b3, #006666);	
+	color: white;
+	border: 1px solid #006666;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	padding: 7px 20px;
+	font-family: coolvetica;
+	font-size: 17px;
+}
+#button input[type=submit]:hover{
+	color: #00cccc;
+	border-color: #003366;
+	cursor: pointer;
+}
+#rectangle{
+	width: 350px;
+	margin: auto;
+	border-radius: 10px;
+	padding: 10px;
+}
+.bottomright{
+	border-radius: 0 0 5px 0;
+}	
+
+#return{
+	font-family: coolvetica;
+	float: left;
+	color: white;
+	background-image: linear-gradient(#404040, #808080);
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -120px;
+	margin-left: 30px;
+}
+
+#return:hover{
+	background-image: linear-gradient(#000000, #404040);
+}
+
+#error{
+	margin: 10px 0;
+	padding: 6px;
+	text-align: center;
+	border-radius: 5px;
+	background-image: linear-gradient(#ff4d4d, #e60000);
+	
+}
+
+#error p{
+	font-family: coolvetica;
+	font-size: 15px;
+	color: white;	
+	margin: 0;
+	display: inline;
+}
+
+#error .emoticon{
+	display: inline;
+	margin: 0 15px;
+}
+footer{
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	position: absolute;
+}
+footer p{
+	display: inline-block;
+    font-family: sans-serif;
+}
+footer a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+footer a:hover{
+	color: black;
+}

@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/home/vol6_5/epizy.com/epiz_21910263/htdocs/admin/.htpasswd"
+Require valid-user

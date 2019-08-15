@@ -1,0 +1,290 @@
+@font-face{
+	font-family: coolvetica;
+	src: url(polices/coolvetica.ttf);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+} 
+
+#conteneur{
+	width: 100%;
+	padding-top: 150px;
+	background-image: url(images/ucp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+footer{
+	bottom: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+footer p{
+	display: inline-block;
+    font-family: sans-serif;
+}
+footer a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+footer a:hover{
+	color: black;
+}
+
+#rectangle{
+	width: 500px;
+	background-color: #009933;
+	margin: auto;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+h1{
+	font-family: coolvetica;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: white;
+}
+
+p{
+	text-indent: 10px;
+	text-align: justify;
+	font-family: helvetica;
+	font-size: 15px;
+	margin: 10px 0;
+	color: white;
+}
+
+#formulaire{
+	margin: auto;
+	border-radius: 10px;
+	background-color: white;
+	border-collapse: collapse;
+}
+
+tr{
+	width: 100%;
+}
+
+#legend{
+	text-align: center;
+	background-image: linear-gradient(white, #f2f2f2);
+	border-radius: 10px 10px 0 0;
+}
+
+#legend td{
+	padding: 7px;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 10px 10px 0 0;
+	font-weight: bold;
+	color: #333333;
+}
+
+td{
+	padding: 10px;
+	text-align: center;
+}
+
+#legend td, label{
+	font-family: helvetica;
+	font-size: 15px;
+}
+
+input[type=submit]{
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	padding: 7px 20px;
+	border: 1px solid #006622;
+	background-image: linear-gradient(#00e649, #008028);
+	color: white;
+	font-weight: bold;
+}
+input[type=submit]:hover{
+	background-image: linear-gradient(#00b339, #004d18);
+	color: #d9d9d9;
+	cursor: pointer;
+}
+
+input[type=radio]{
+	vertical-align: middle;
+}
+
+.error{
+	margin: 10px auto;
+	background-image: linear-gradient(#ff9999, #e60000);
+	border-radius: 5px;
+	padding: 5px;
+	font-family: roboto;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+	text-align: center;
+}
+
+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+label input:checked ~ .checkmark {
+    background-color: #009933;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+label .checkmark:after {
+ 	top: 7px;
+	left: 7px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: white;
+}
+
+figure{
+	float: right;
+	margin: 30px;
+	margin-top: -120px;
+}
+
+/****************************************************************************************************************************************Admin part*/
+
+#admintable{
+	margin: auto;
+	border-collapse: collapse;
+}
+
+#adminpic{
+	border-radius: 10px 10px 0 0;
+	background-color: white;
+}
+
+#adminpic img{
+	padding: 5px;
+	border-radius: 5px;
+	background-image: linear-gradient(#00b3b3, #006666);
+}
+
+.filled{
+	background-color: white;
+}
+
+#member_login{
+	background-image: linear-gradient(90deg, #e6e6e6, white, white);
+}
+
+#lockimg{
+	text-align: right;
+	padding-right: 10px;
+	border-radius: 0 5px 0 0;
+}
+
+#admintable td{
+	font-family: coolvetica;
+	font-size: 17px;
+	color: #595959;
+}
+
+input[type=text], input[type=password]{
+	font-family: coolvetica;
+	font-size: 17px;
+	border-radius: 3px;
+	background-color: #cccccc;
+}
+
+.admin{
+	text-align: left;
+}
+
+.admin label{
+	padding: 0;
+}
+
+#button{
+	text-align: right;
+	border-radius: 0 0 0 5px;
+}
+
+#button input[type=submit]{
+	background-image: linear-gradient(#00b3b3, #006666);	
+	color: white;
+	border: 1px solid #006666;
+}
+#button input[type=submit]:hover{
+	color: #e6e6e6;
+	border-color: #003366;
+	cursor: pointer;
+}
+#rectangle_2{
+	width: 350px;
+	margin: auto;
+	border-radius: 10px;
+	padding: 10px;
+}
+.bottomright{
+	border-radius: 0 0 5px 0;
+}	
+
+/**********************************************************************************************************************************Retour*/
+
+#return{
+	font-family: coolvetica;
+	float: left;
+	color: white;
+	background-image: linear-gradient(#404040, #808080);
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -120px;
+	margin-left: 30px;
+}
+
+#return:hover{
+	background-image: linear-gradient(#000000, #404040);
+}

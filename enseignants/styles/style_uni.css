@@ -1,0 +1,191 @@
+@font-face{
+	font-family: coolvetica;
+	src: url('../../polices/coolvetica.ttf');
+	
+}
+@font-face{
+	font-family: kiona;
+	src: url('../../polices/Kiona-Regular.ttf');
+	
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+/*********************************************************************************************************Menu**/
+
+nav{
+	background-color:#8c8c8c;
+	width: 200px;
+	height: 100%;
+	min-width: 200px;
+}
+
+nav form{
+	display: inline;
+}
+
+nav table{
+	margin: 55px 0 5px 0;
+	border-collapse: collapse;
+}
+
+nav td{
+	height: 100%;
+}
+
+/**Labels*/
+
+nav a, nav td{
+	color: white;
+	font-size: 100%;
+	font-family: kiona;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+nav tr{
+	display: inline-block;	
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+nav .label{
+	padding: 20px 10px;
+	text-align: center;
+	width: 100%;
+}
+
+/**Buttons*/
+
+nav .buttons{
+	width: auto;
+	height: auto;
+}
+
+nav .buttons:hover{
+	cursor: pointer;
+}
+
+nav .buttons input[type=submit]{
+	border: 0;
+	background-color: transparent;
+	background-image: url('../images/button_bg.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	color: #004d1a;
+	font-weight: bold;
+	font-family: coolvetica;
+}
+
+nav .buttons input[type=submit]:hover{
+	cursor: help;
+}
+
+/**Icons*/
+
+nav .icons{
+	width: 40px;
+	height: 40px;
+	background-color: #404040;
+}
+
+/**En cours*/
+
+.en-cours .icons{
+	background-color: #8cd98c;
+}
+
+.en-cours .label, .en-cours .buttons{
+	background-color: #40bf40;
+}
+
+/**Hover*/
+
+nav .icons:hover, nav tr:hover .icons{
+	background-color: white;
+}
+
+nav .label:hover, nav tr:hover .label, nav tr:hover .buttons, nav .buttons:hover{
+	background-color: #595959;
+}
+
+/*Liste des favoris, etc...*/
+
+.list ul{
+	list-style: none;
+}
+
+.list li{
+	text-align: left;
+	padding: 3px;
+	font-family: coolvetica;
+	font-size: 15px;
+}
+
+.list li a:hover, li:hover a{
+	color: #339933;
+	cursor: pointer;
+}
+
+.list li:hover{
+	background-color: white;
+}
+
+/*Deconnexion*/
+
+#logout{
+	position: fixed;
+	display: inline-block;
+	bottom: 0;
+	text-align: center;
+	width: 200px;
+}
+
+#logout input[type=submit]{
+	padding: 6px 10px;
+	font-family: coolvetica;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 0;
+	margin-bottom: 10px;
+	color: white;
+	background-color: #008000;
+}
+
+#logout input[type=submit]:hover{
+	background-color: #003300;
+	cursor: pointer;
+}
+
+/*********footer*/
+
+footer{
+	margin-top: 10px;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+
+footer aside{
+	float: right;
+}
+footer p{
+	display: inline-block;
+    font-family: sans-serif;
+}
+footer a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+footer a:hover{
+	color: black;
+}

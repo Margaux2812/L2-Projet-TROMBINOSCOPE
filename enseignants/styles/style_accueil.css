@@ -1,0 +1,40 @@
+@import url('style_uni.css');
+
+/*********************************************************************************************************Contenu*/
+
+#contenu{
+	flex: 1;
+	background-color: white;
+	height: 700px;
+	text-align: center;
+}
+
+#changepass{
+	background-image: linear-gradient(white, #ccffcc);
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#changepass h1{
+	margin: 3px;
+	font-family: coolvetica;
+}
+
+#changepass form{
+	margin-top: 7px;
+	font-family: coolvetica;
+	text-align: left;
+	text-indent: 10px;
+}
+
+#changepass form input[type=password]{
+	border-radius: 2px;
+	border: 1px solid black;
+	background-color: #f2f2f2;
+}
+
+#changepass form td{
+	padding: 5px;
+}

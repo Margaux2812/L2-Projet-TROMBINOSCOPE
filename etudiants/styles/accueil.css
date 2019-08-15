@@ -1,0 +1,328 @@
+@font-face{
+	font-family: coolvetica;
+	src: url(../polices/coolvetica.ttf);
+}
+
+@font-face{
+	font-family: lobster;
+	src: url(../polices/Lobster.otf);
+}
+
+html, body{
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	position:absolute; top:0; bottom:0; right:0; left:0;
+	display: flex;
+	flex-direction: column;
+}
+footer{
+	margin-top: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+footer aside{
+	float: right;
+}
+footer p{
+	display: inline-block;
+    font-family: sans-serif;
+}
+footer a{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+footer a:hover{
+	color: black;
+}
+/*---------------------------------------------------------------------------------------------------------En-tête---*/
+
+header{
+	width: 100%;
+	height : 90px;
+	background-color: #5cd65c;
+	border-bottom: 1px solid #1f7a1f;
+}
+#return{
+	font-family: coolvetica;
+    float: left;
+    color: white;
+    background-image: linear-gradient(#404040, #808080);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#return:hover{
+	background-image: linear-gradient(#000000, #404040);
+}
+
+#conteneur_form{
+	float: right;
+	height: 100%;
+	padding: 0 10px;
+	display: table;
+}
+
+#login_form{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#login_form td{
+	padding-right: 8px;
+}
+
+#login_form table{
+	vertical-align: middle;
+}
+
+.labels{
+	font-family: coolvetica;
+	font-size: 15px;
+	padding: 5px;
+	color: white;
+}
+.labels img{
+	margin-left: 10px;
+}
+.labels:hover img{
+	cursor: help;
+}
+#login_form input[type=text], #login_form input[type=password]{
+	background-color: white;
+	border-radius: 5px;
+	padding: 3px;
+	border-style: none;
+}
+
+#login_form input[type=submit]{
+	padding: 3px 6px;
+	font-family: coolvetica;
+	font-size: 15px;
+	border: 1px solid #1f3d7a;
+	border-radius: 3px;
+	color: white;
+	background-color: #85a3e0;
+}
+#login_form input[type=submit]:hover{
+	background-image: linear-gradient(#1f3d7a, #3366cc);
+	cursor: pointer;
+}
+#login_form a{
+	text-decoration: none;
+    color: #2eb82e;
+}
+#login_form a:hover{
+	color: #196619;
+}
+.erreur td{
+	font-family: coolvetica;
+	font-size: 13px;
+	color: #cc0000;
+}
+
+.erreur{
+	padding:  0;
+	padding-top: 3px;
+}
+
+header h1{
+	float: left;
+	margin: 0;
+	padding-left: 10%;
+	padding-top: 10px;
+	font-size: 50px;
+	font-family: lobster;
+	color: white;
+}
+/*---------------------------------------------------------------------------------------------------------Conteneur---*/
+
+#conteneur{
+	display: flex;
+	background-image: linear-gradient(white, #99e699);
+	flex: 1;
+}
+
+/*---------------------------------------------------------------------------------------------------------Image de présentation---*/
+
+#img_presentation {
+	width: 75%;
+}
+
+#img_presentation figure{
+	margin: 0;
+	text-align: center;
+	height: 100%;
+	position: relative;
+}	
+#img_presentation img{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------------------------------------------------------------------------------------------------------Inscription---*/
+
+#inscription{
+	width: 25%;
+	padding: 30px;
+}
+#inscription h2{
+	font-family: coolvetica;
+	font-size: 40px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+#inscription h3{
+	font-family: coolvetica;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 13px;
+}
+
+#inscription input{
+	margin: 5px auto;
+	font-family: coolvetica;
+	font-size: 18px;
+	padding: 8px 10px;
+}	
+
+#inscription input[type=text], select, #inscription input[type=password]{
+	border-radius: 5px;
+	border: 1px solid #1f7a1f;
+	display: block;
+}
+
+#inscription ::placeholder, select option:disabled{
+	color: #bfbfbf;
+}
+
+#inscription form{
+	text-align: center;
+}
+#inscription fieldset{
+	display: inline;
+	border-radius: 10px;
+	border: 1px dashed black;
+}
+
+#inscription input[type=submit]{
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+	border-radius: 10px;
+	padding: 7px 20px;
+	border: 1px solid black;
+	background-image: linear-gradient(#00e600, #006600);
+	color: white;
+}
+
+#inscription input[type=submit]:hover{
+	background-image: linear-gradient(#00b300, #003300);
+	cursor: pointer;
+	color: #e6e6e6;
+}
+
+select{
+	margin: 5px auto;
+	font-family: roboto;
+	font-size: 18px;
+	padding: 5px 10px;
+}
+
+#inscription table{
+	margin: auto;
+	text-align: center;
+}
+
+.label-picture {
+	padding: 10px;
+}
+
+.label-picture label{
+	cursor: pointer;
+    color: black;
+    font-weight: bold;
+	font-size: 18px;
+}
+
+.success{
+	background-image: linear-gradient(#00e600, #006600);
+	margin: 5px auto;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: roboto;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+.error{
+	margin: 5px auto;
+	background-image: linear-gradient(#ff9999, #e60000);
+	border-radius: 5px;
+	padding: 5px;
+	font-family: roboto;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+#mdpoublie{
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 50px;
+}
+#mdpoublie label{
+	color: black;
+	font-size: 30px;
+}
+#mdp{
+	background-image: url(../images/bgforgot.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#mdp a{
+	font-family: coolvetica;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+#mdp a:hover{
+	text-decoration: underline;
+}
+#mdp #login{
+	padding: 10px;
+    font-size: 30px;
+}
+#mdp input[type=submit]{
+	padding: 10px;
+    font-size: 25px;
+    font-family: coolvetica;
+}
+#mdp h1{    
+	font-size: 50px;
+    font-family: lobster;
+	align-self: center;
+}
